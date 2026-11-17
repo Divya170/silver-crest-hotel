@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Silver Crest Hotel — About</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F8F6F0;color:#292A27;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+a{color:#292A27}a:hover{color:#6E5A39}
+p{margin:0}
+:focus-visible{outline:2px solid #6E5A39;outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:12px;z-index:100;background:#292A27;color:#F8F6F0;padding:12px 18px;text-decoration:none}
+.skip:focus{left:12px;color:#F8F6F0}
+.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-0.01em}
+.wrap{width:100%;max-width:1280px;margin:0 auto;padding-left:clamp(20px,5vw,72px);padding-right:clamp(20px,5vw,72px)}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:#6E5A39}
+.h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(36px,4.6vw,64px);line-height:1.04;letter-spacing:-0.015em;margin:16px 0 0}
+.lead{font-size:clamp(16px,1.25vw,18px);line-height:1.75;color:#55544F}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;font:600 13px/1.2 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:1px solid #292A27;background:#292A27;color:#F8F6F0;cursor:pointer;border-radius:1px;transition:background .25s,color .25s,border-color .25s,transform .2s}
+.btn:hover{background:#3D3E3A;color:#fff}
+.btn:active{transform:translateY(1px)}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.btn .arr{display:inline-block;transition:transform .25s}
+.btn:hover .arr{transform:translateX(4px)}
+.btn-ghost{background:transparent;color:#292A27}
+.btn-ghost:hover{background:#292A27;color:#F8F6F0}
+.btn-gold{background:#B39A70;border-color:#B39A70;color:#1F201D}
+.btn-gold:hover{background:#C4AD86;border-color:#C4AD86;color:#1F201D}
+.btn-light{background:#F8F6F0;color:#292A27;border-color:#F8F6F0}
+.btn-light:hover{background:#fff;color:#292A27;border-color:#fff}
+.btn-outline-light{background:transparent;color:#F8F6F0;border-color:rgba(248,246,240,.75)}
+.btn-outline-light:hover{background:#F8F6F0;color:#292A27}
+.link-arrow{display:inline-flex;gap:10px;align-items:center;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-decoration:none;border-bottom:1px solid #B39A70;padding:10px 0 8px}
+.link-arrow .arr{transition:transform .25s}
+.link-arrow:hover .arr{transform:translateX(4px)}
+.ph{position:relative;overflow:hidden;background-color:#DCD7CD;background-image:repeating-linear-gradient(135deg,rgba(41,42,39,.07) 0 1px,transparent 1px 16px)}
+.ph-dark{background-color:#3A3B37;background-image:repeating-linear-gradient(135deg,rgba(248,246,240,.07) 0 1px,transparent 1px 16px)}
+.ph-tag{position:absolute;left:14px;bottom:14px;max-width:calc(100% - 28px);padding:8px 12px;background:rgba(248,246,240,.94);color:#292A27;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;line-height:1.45}
+.todo{border:1px dashed #9C8456;background:rgba(179,154,112,.08);padding:14px 16px;color:#55544F;font-size:14px;line-height:1.6}
+.todo-dark{border-color:rgba(220,201,163,.7);background:rgba(179,154,112,.1);color:#DCD7CD}
+.todo-tag{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#6E5A39;margin-bottom:4px}
+.todo-dark .todo-tag{color:#DCC9A3}
+.split{display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,104px);align-items:center}
+.split>*{flex:1 1 400px;min-width:0}
+.g-collapse{display:grid}
+@media (max-width:860px){.g-collapse{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:none!important}.g-collapse>*{grid-column:auto!important;grid-row:auto!important}}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-link{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;text-decoration:none;padding:10px 0;border-bottom:1px solid transparent;transition:border-color .25s,color .25s}
+.nav-link:hover{border-bottom-color:#DCD7CD}
+.nav-link[aria-current="page"]{border-bottom-color:#B39A70;font-weight:600}
+.nav-toggle{display:none!important}
+@media (max-width:1040px){.nav-links,.nav-cta{display:none!important}.nav-toggle{display:inline-flex!important}}
+.mlink{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(34px,9vw,46px);color:#F8F6F0;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(248,246,240,.14);display:flex;justify-content:space-between;align-items:center}
+.mlink:hover{color:#DCC9A3}
+.mlink[aria-current="page"]{color:#DCC9A3}
+.crumbs{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.crumbs a{text-decoration:none;color:#DCD7CD}.crumbs a:hover{color:#fff}
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.field label,.field .lbl{font-size:13px;font-weight:600;color:#292A27}
+.input{width:100%;min-height:52px;padding:12px 14px;font:400 16px/1.4 Inter,sans-serif;color:#292A27;background:#fff;border:1px solid #8A857B;border-radius:2px;transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none}
+textarea.input{min-height:140px;resize:vertical}
+select.input{background-image:linear-gradient(45deg,transparent 50%,#292A27 50%),linear-gradient(135deg,#292A27 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:40px}
+.input:focus{outline:none;border-color:#292A27;box-shadow:0 0 0 3px rgba(179,154,112,.45)}
+.input[aria-invalid="true"]{border-color:#A23B2A}
+.hint{font-size:13px;color:#55544F;line-height:1.5}
+.err{font-size:13px;color:#A23B2A;line-height:1.5;display:flex;gap:6px;align-items:flex-start}
+.req{color:#A23B2A}
+.step{width:52px;min-height:52px;border:1px solid #8A857B;background:#fff;color:#292A27;font-size:20px;cursor:pointer;border-radius:2px}
+.step:hover{background:#EEE9DF}
+.step[disabled]{opacity:.4;cursor:not-allowed}
+.reveal{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.reveal-2{animation:rise 1s .15s cubic-bezier(.2,.7,.2,1) both}
+.reveal-3{animation:rise 1s .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.kb{animation:kb 24s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.07) translateX(-1%)}}
+.zoom{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.zoom-host:hover .zoom,.zoom-host:focus-visible .zoom{transform:scale(1.045)}
+.foot a{color:#DCD7CD;text-decoration:none}
+.foot a:hover{color:#fff;text-decoration:underline}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.chip{min-height:44px;padding:0 20px;border:1px solid #CFC9BD;background:transparent;color:#292A27;font:500 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:999px;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:#292A27}
+.chip[aria-pressed="true"]{background:#292A27;color:#F8F6F0;border-color:#292A27}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:1px solid rgba(248,246,240,.5);background:rgba(41,42,39,.35);color:#F8F6F0;cursor:pointer;border-radius:999px}
+.icon-btn:hover{background:rgba(41,42,39,.7)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</helmet>
+<a class="skip" href="#main">Skip to content</a>
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(248,246,240,0.97); border-bottom: 1px solid {{headerBorder}}; box-shadow: {{headerShadow}}; transition: border-color .3s, box-shadow .3s">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 84px">
+<a href="Main.dc.html" aria-label="Silver Crest Hotel, home" style="text-decoration: none; display: flex; align-items: center; gap: 14px; color: #292A27">
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><path d="M3 24 L12 12 L17 18 L22 9 L31 24" stroke="#B39A70" stroke-width="1.4" stroke-linejoin="round"></path><path d="M3 28 H31" stroke="#292A27" stroke-width="1.4"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1">
+<span class="serif" style="font-size: 27px; letter-spacing: 0.01em">Silver Crest</span>
+<span style="font-size: 9.5px; letter-spacing: 0.44em; text-transform: uppercase; color: #55544F; margin-top: 6px">Hotel · Bakersfield</span>
+</span>
+</a>
+<nav aria-label="Primary" class="nav-links">
+<a class="nav-link" href="Main.dc.html">Home</a>
+<a class="nav-link" href="Rooms.dc.html">Rooms</a>
+<a class="nav-link" href="Amenities.dc.html">Amenities</a>
+<a class="nav-link" href="About.dc.html" aria-current="page">About</a>
+<a class="nav-link" href="Gallery.dc.html">Gallery</a>
+<a class="nav-link" href="Contact.dc.html">Contact</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<a class="btn nav-cta" href="Contact.dc.html" style="min-height: 46px; padding: 0 22px">Inquire Now</a>
+<a class="btn btn-ghost nav-toggle" href="tel:+18421472951" aria-label="Call Silver Crest Hotel" style="min-height: 44px; min-width: 44px; padding: 0 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg></a>
+<button type="button" class="btn btn-ghost nav-toggle" aria-label="Open menu" aria-expanded="{{menuExpanded}}" aria-controls="mobile-menu" onClick="{{openMenu}}" style="min-height: 44px; min-width: 44px; padding: 0 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</div>
+</div>
+</header>
+<sc-if value="{{menu}}" hint-placeholder-val="{{false}}">
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Site menu" onKeyDown="{{menuKey}}" style="position: fixed; inset: 0; z-index: 80; background: #292A27; color: #F8F6F0; display: flex; flex-direction: column; padding: 20px clamp(20px,6vw,48px) 32px; overflow-y: auto">
+<div style="display: flex; justify-content: space-between; align-items: center; min-height: 64px">
+<span class="serif" style="font-size: 26px">Silver Crest Hotel</span>
+<button type="button" class="icon-btn" autoFocus="{{true}}" aria-label="Close menu" onClick="{{closeMenu}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg></button>
+</div>
+<nav aria-label="Mobile" style="display: flex; flex-direction: column; margin-top: 32px">
+<a class="mlink" href="Main.dc.html">Home<span aria-hidden="true" style="font-size: 20px">→</span></a>
+<a class="mlink" href="Rooms.dc.html">Rooms<span aria-hidden="true" style="font-size: 20px">→</span></a>
+<a class="mlink" href="Amenities.dc.html">Amenities<span aria-hidden="true" style="font-size: 20px">→</span></a>
+<a class="mlink" href="About.dc.html" aria-current="page">About<span aria-hidden="true" style="font-size: 20px">→</span></a>
+<a class="mlink" href="Gallery.dc.html">Gallery<span aria-hidden="true" style="font-size: 20px">→</span></a>
+<a class="mlink" href="Contact.dc.html">Contact<span aria-hidden="true" style="font-size: 20px">→</span></a>
+</nav>
+<div style="margin-top: auto; padding-top: 40px; display: flex; flex-direction: column; gap: 12px">
+<a class="btn btn-light" href="Contact.dc.html" style="width: 100%">Inquire About Reservations</a>
+<a class="btn btn-outline-light" href="tel:+18421472951" style="width: 100%">Call +1 (842) 147-2951</a>
+<p style="font-size: 13px; color: #B5B0A5; text-align: center; margin-top: 8px">3194 Pine Avenue, Bakersfield, CA 93301</p>
+</div>
+</div>
+</sc-if>
+<main id="main">
+
+<section aria-labelledby="page-h" style="position: relative; min-height: clamp(520px, 72vh, 760px); display: flex; align-items: center; color: #F8F6F0; overflow: hidden; background: #292A27">
+<div class="ph ph-dark kb" aria-hidden="true" style="position: absolute; inset: -2%; background-color: #403E38"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,24,22,0.72) 0%, rgba(24,24,22,0.25) 70%)"></div>
+<p class="ph-tag" style="top: 24px; bottom: auto; left: auto; right: clamp(20px,5vw,72px)">Photo placeholder · Hotel exterior</p>
+<div class="wrap" style="position: relative; padding-top: 72px; padding-bottom: 72px">
+<nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="Main.dc.html">Home</a></li><li aria-hidden="true">/</li><li aria-current="page" style="color: #DCC9A3">About</li></ol></nav>
+<h1 id="page-h" class="serif reveal" style="margin: 24px 0 0; font-size: clamp(52px, 7.6vw, 116px); line-height: 0.95; letter-spacing: -0.02em; max-width: 9ch">A Welcoming Place to Stay</h1>
+<p class="reveal-2" style="max-width: 500px; margin-top: 28px; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.7; color: #EEE9DF">Silver Crest Hotel provides accommodation in Bakersfield, California, built around comfort and a genuine welcome.</p>
+</div>
+</section>
+
+<section aria-labelledby="intro-h" style="padding: clamp(88px, 11vw, 168px) 0">
+<div class="wrap g-collapse" style="grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(24px, 3vw, 48px)">
+<div style="grid-column: 1 / span 4">
+<p class="eyebrow">The Hotel</p>
+<p class="serif" aria-hidden="true" style="font-size: clamp(120px, 14vw, 200px); line-height: 0.8; color: #DCD7CD; margin-top: 18px">SC</p>
+</div>
+<div style="grid-column: 6 / span 7">
+<h2 id="intro-h" class="serif" style="margin: 0; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.15; font-weight: 400">Silver Crest Hotel is a hotel in Bakersfield offering comfortable accommodation and attentive, professional hospitality for individual travelers, couples, families and business guests.</h2>
+<div class="todo" style="margin-top: 36px"><span class="todo-tag">Client to supply</span>The hotel’s own introduction: what it is, the accommodation it offers and how it approaches hospitality. Founding date, ownership, awards and milestones are left out unless the hotel provides and verifies them.</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="phil-h" style="background: #EEE9DF; padding: clamp(88px, 11vw, 160px) 0">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: clamp(56px, 7vw, 96px)">
+<div><p class="eyebrow">Hospitality Philosophy</p><h2 id="phil-h" class="h2">What we care about.</h2></div>
+<p class="todo" style="max-width: 400px"><span class="todo-tag">Pending client approval</span>These four themes appear as the hotel’s philosophy only once the hotel approves them.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{values}}" as="v" hint-placeholder-count="4">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline; padding: clamp(28px, 3.5vw, 44px) 0; border-top: 1px solid #C9C2B4">
+<span class="serif" aria-hidden="true" style="flex: 0 0 80px; font-size: 22px; color: #6E5A39; font-style: italic">{{v.n}}</span>
+<p class="serif" style="flex: 1 1 380px; font-size: clamp(38px, 5vw, 72px); line-height: 1; letter-spacing: -0.015em">{{v.title}}</p>
+<p class="hint" style="flex: 0 1 340px; font-size: 15px">{{v.note}}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="prop-h" style="padding: clamp(88px, 11vw, 168px) 0">
+<div class="wrap">
+<div class="split" style="margin-bottom: clamp(48px, 6vw, 80px); align-items: flex-end">
+<div><p class="eyebrow">The Property</p><h2 id="prop-h" class="h2">Inside Silver Crest.</h2></div>
+<div class="todo"><span class="todo-tag">Client to supply</span>Authentic photographs of the building, reception and rooms, with a verified short description of the property.</div>
+</div>
+<div class="g-collapse" style="grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px)">
+<div class="ph" style="grid-column: span 5; aspect-ratio: 4 / 5"><p class="ph-tag">Building exterior</p></div>
+<div style="grid-column: span 7; display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px)">
+<div class="ph" style="min-height: 240px; background-color: #CFC9BD"><p class="ph-tag">Reception or lobby</p></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px)">
+<div class="ph" style="min-height: 240px; background-color: #E3DED4"><p class="ph-tag">Guest room</p></div>
+<div class="ph" style="min-height: 240px"><p class="ph-tag">Architectural detail</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="cta-h" style="background: #292A27; color: #F8F6F0; padding: clamp(96px, 12vw, 168px) 0; text-align: center">
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center">
+<h2 id="cta-h" class="serif" style="margin: 0; font-size: clamp(44px, 6.4vw, 92px); line-height: 1; letter-spacing: -0.02em; max-width: 14ch">Experience Silver Crest Hotel.</h2>
+<p style="margin-top: 24px; max-width: 480px; font-size: 17px; line-height: 1.7; color: #DCD7CD">Tell us your dates and the team will get back to you about your stay.</p>
+<a class="btn btn-light" href="Contact.dc.html" style="margin-top: 40px">Inquire About Reservations <span class="arr" aria-hidden="true">→</span></a>
+</div>
+</section>
+
+</main>
+<footer class="foot" style="background: #292A27; color: #DCD7CD; padding: clamp(64px,8vw,104px) 0 40px">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; gap: 56px; justify-content: space-between; padding-bottom: 56px; border-bottom: 1px solid rgba(220,215,205,0.18)">
+<div style="flex: 1 1 320px; max-width: 440px">
+<p class="serif" style="font-size: 40px; line-height: 1; color: #F8F6F0">Silver Crest Hotel</p>
+<p style="margin: 18px 0 30px; line-height: 1.7; font-size: 15px; color: #DCD7CD">Accommodation and reservation inquiries in Bakersfield, California.</p>
+<a class="btn btn-light" href="Contact.dc.html" style="color: #292A27; text-decoration: none">Inquire About Reservations <span class="arr" aria-hidden="true">→</span></a>
+</div>
+<nav aria-label="Footer" style="flex: 0 1 180px">
+<p class="eyebrow" style="color: #B39A70; margin-bottom: 20px">Explore</p>
+<ul>
+<li><a href="Main.dc.html">Home</a></li>
+<li><a href="Rooms.dc.html">Rooms &amp; Accommodation</a></li>
+<li><a href="Amenities.dc.html">Amenities</a></li>
+<li><a href="About.dc.html">About</a></li>
+<li><a href="Gallery.dc.html">Gallery</a></li>
+<li><a href="Contact.dc.html">Contact &amp; Reservations</a></li>
+</ul>
+</nav>
+<div style="flex: 0 1 300px">
+<p class="eyebrow" style="color: #B39A70; margin-bottom: 20px">Visit &amp; Contact</p>
+<address style="font-style: normal; line-height: 1.9; font-size: 15px">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=3194+Pine+Avenue%2C+Bakersfield%2C+CA+93301%2C+USA">3194 Pine Avenue<br>Bakersfield, CA 93301, USA</a><br>
+<a href="tel:+18421472951">+1 (842) 147-2951</a><br>
+<a href="mailto:silvercresthotel@hotmail.com">silvercresthotel@hotmail.com</a>
+</address>
+<a class="link-arrow" href="https://www.google.com/maps/dir/?api=1&amp;destination=3194+Pine+Avenue%2C+Bakersfield%2C+CA+93301%2C+USA" style="color: #F8F6F0; margin-top: 22px; text-decoration: none">Get Directions <span class="arr" aria-hidden="true">→</span></a>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 28px; font-size: 13px; color: #B5B0A5">
+<p>© 2026 Silver Crest Hotel. All rights reserved.</p>
+<p>Inquiries sent through this website are not confirmed reservations.</p>
+</div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4400}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menu: false, scrolled: false };
+  }
+  navMount() {
+  this._onScroll = () => {
+    const s = window.scrollY > 12;
+    if (s !== !!this.state.scrolled) this.setState({ scrolled: s });
+  };
+  window.addEventListener('scroll', this._onScroll, { passive: true });
+}
+navUnmount() {
+  if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
+}
+navVals() {
+  return {
+    menu: !!this.state.menu,
+    menuExpanded: this.state.menu ? 'true' : 'false',
+    openMenu: () => this.setState({ menu: true }),
+    closeMenu: () => this.setState({ menu: false }),
+    menuKey: (e) => { if (e.key === 'Escape') this.setState({ menu: false }); },
+    headerBorder: this.state.scrolled ? '#DCD7CD' : 'rgba(220,215,205,0)',
+    headerShadow: this.state.scrolled ? '0 8px 28px rgba(41,42,39,0.06)' : 'none'
+  };
+}
+
+  componentDidMount() { this.navMount(); }
+  componentWillUnmount() { this.navUnmount(); }
+  renderVals() {
+    return {
+      ...this.navVals(),
+      values: [
+        { n: 'i.', title: 'Guest comfort', note: '[Client-approved line on how comfort shapes each stay.]' },
+        { n: 'ii.', title: 'Welcoming hospitality', note: '[Client-approved line on how guests are welcomed.]' },
+        { n: 'iii.', title: 'Clean, organized rooms', note: '[Client-approved line on cleanliness and attention to detail.]' },
+        { n: 'iv.', title: 'Professional service', note: '[Client-approved line on the team’s service.]' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
